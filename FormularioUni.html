@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Solicitud de ingreso a la Uni</title>
+    </head>
+    <body>
+        <form action="./Resultados_Uni.php" method="get">
+            <fieldset>
+                <legend>Solicitud de ingreso a la Uni</legend>
+                Nombre: <input type="text" name="Nombre" required>
+                <br><br>
+                Apellido paterno: <input type="text" name="Apellidopaterno" required>
+                <br><br>
+                Apellido materno: <input type="text" name="Apellidomaterno" required>
+                <br><br>
+                <label for="Nguests" class="col-md-2 col-form-label">Sexo:</label>
+                <input class="form-check-input" type="radio" name="sexo" id="NGuest1" value="Hombre" checked>
+                <label class="form-check-label" for="NGuest1">Hombre</label>
+                <input class="form-check-input" type="radio" name="sexo" id="NGuest2" value="Mujer">
+                <label class="form-check-label" for="NGuest2">Mujer</label>
+                <br><br>
+                <label for="edad">Edad: 
+                    <input type="number" name="edad" min="17" max="100" required>
+                </label>
+                <br><br>
+                Correo electrónico: <input type="email" name="correo" required>
+                <br><br>
+                <label for="telefono">Telefono: 
+                    <input type="text" name="telefono" required>
+                </label>
+                <br><br>
+                <label for="celular">Celular: 
+                    <input type="text" name="celular" required>
+                </label>
+                <br><br>
+                <label for="escuela">Escuela de procedecncia: </label>
+                <select name="escuela">
+                    <option value="1">Escuela Nacional Preparatoria</option>
+                    <option value="2">Colegio Nacional de Educación Profesional</option>
+                    <option value="3">Instituto Politécnico Nacional</option>
+                    <option value="4">Otro</option>
+                </select>
+                <br><br>
+                <label for="promedio">Promedio: 
+                    <input type="number" name="promedio" min="6" max="10" required>
+                </label>
+                <br><br>
+                Primera opción: <input type="text" name="opción1" required>
+                <br><br>
+                Segunda opción: <input type="text" name="opción2" required>
+                <br><br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </fieldset>
+        </form>
+    </body>
+</html>
