@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Código Morse</title>
+    </head>
+    <body>
+        <form action="./Traducción.php" method="get">
+            <fieldset>
+                <legend><h1>Traductor de lenguaje Morse</h1></legend>
+                <label for="traducir"><h3>Seleccione cómo desea traducir</h3></label><br>
+                <select name="traducir">
+                    <option value="1">Del español al Morse</option>
+                </select>
+                <br><br>
+                <h3>Inserte el texto:</h3>
+                <input type="text" name="texto" required>
+                <br><br>
+                <input type="submit" value="Traducir">
+            </fieldset>
+        </form>
+    </body>
+</html>
