@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>App 2 en 1</title>
+    </head>
+    <body>
+        <form action="./ResultadosApp.php" method="post">
+            <fieldset>
+                <legend><h1>Reloj Mundial</h1></legend>
+                <h2>Ingrese hora (CDMX)</h2>
+                <input type="time" name="hora">
+                <br>
+                <h2>Elija los países que desea consultar</h2>
+                Nueva York:<input type="checkbox" name="pa1" value="1">
+                Sao Paulo:<input type="checkbox" name="pa2" value="2"><br>
+                Madrid:<input type="checkbox" name="pa3" value="3">
+                París:<input type="checkbox" name="pa4" value="4"><br>
+                Roma:<input type="checkbox" name="pa5" value="5">
+                Atenas:<input type="checkbox" name="pa6" value="6"><br>
+                Beijing:<input type="checkbox" name="pa7" value="7"> 
+                Tokio:<input type="checkbox" name="pa8" value="8"><br><br>
+                <input type=submit  name="send" value=Consultar>
+            </fieldset>
+            <fieldset>
+                <legend><h1>Calcula Cumpleaños</h1></legend>
+                <label for="Nguests" class="col-md-2 col-form-label"><h3>Ingrese su fecha de nacimiento</h3></label>
+                <input type="date" name="Fecha">
+                <h2>¿Qué quiere consultar?</h2>
+                Días para próximo cumpleaños<input type="checkbox" name="c1" value="1"><br>
+                Horas para próximo cumpleaños<input type="checkbox" name="c2" value="1"><br>
+                Minutos para próximo cupleaños<input type="checkbox" name="c3" value="1"><br>
+                ¿Será fin de semana?<input type="checkbox" name="c4" value=""><br><br>
+                <input type=submit name="send" value=Calcular>
+            </fieldset>
+        </form>
+    </body>
+</html>
