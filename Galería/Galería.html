@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Registro de obra</title>
+    </head>
+    <body>
+        <form action="./Galería.php" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend><h1>Registro de nueva obra</h1></legend>
+                Ingrese el nombre de la obra: <input type="text" name="obra" required>
+                <br><br>
+                Ingresa el nombre del autor: <input type="text" name="autor" >
+                <br><br>
+                Ingrese el año en el que se realizó la obra: <input type="number" name="año">
+                <br><br>
+                Ingrese su archivo: <input type="file" name="pintura" required>
+                <input type="submit" value="Subir Obra">
+            </fieldset>
+        </form>
+    </body>
+</html>
